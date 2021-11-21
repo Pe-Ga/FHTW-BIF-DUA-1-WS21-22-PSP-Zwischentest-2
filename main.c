@@ -230,27 +230,13 @@ enum priority charToPriority(char priority)
 {
     switch(priority)
     {
-        case 'L':
-            return lowest;
-            break;
-        case 'l':
-            return lower;
-            break;
-        case 'n':
-            return normal;
-            break;
-        case 'h':
-            return high;
-            break;
-        case 'H':
-            return highest;
-            break;
-        default:
-            return '?';
-            break;
-
+        case 'L': return lowest;  break;
+        case 'l': return lower;   break;
+        case 'n': return normal;  break;
+        case 'h': return high;    break;
+        case 'H': return highest; break;
+        default:  return '?';     break;
     }
-
 
 }
 
